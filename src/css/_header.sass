@@ -1,0 +1,37 @@
+header.page-header
+	position: relative
+
+
+.header-top-bar
+	// border-bottom: 1px solid $primary-border-color
+	background: $primary-dark-color
+	ul 
+		display: flex
+		flex-shrink: 0
+		li 
+			line-height: 26px
+			padding: 0 10px
+			border-right: 1px solid $primary-border-color-on-primary-dark-color
+		li > a, li > span
+			line-height: 26px
+			font-size: 13px
+			color: #fff
+
+
+.header-middle
+	background: $primary-color
+	padding: 20px 0 16px
+	.search
+		max-width: 600px
+		.search-group
+			box-shadow: 0 1px 2px 0 rgba(98,98,98,.5)
+			border-radius: 3px
+		.input-category
+			max-width: 170px
+			border-left: 1px solid $primary-dark-color
+		button[type="submit"]
+			background: $btn-default-color
+			&:hover
+				background: darken($primary-color, 10%)
+.header-navigation
+	background: $primary-color
